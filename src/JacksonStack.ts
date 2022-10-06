@@ -17,6 +17,9 @@ class JacksonStack {
   StackArray(): void {
     console.log(this.stackNum)
   }
+  Pop(pushedNum: number): void {
+    this.stackNum.pop(pushedNum)
+  }
 }
 
 export = JacksonStack
