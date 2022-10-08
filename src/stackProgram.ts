@@ -24,13 +24,19 @@ for (let counter = 0; counter < 5; counter++) {
 // outputting information
 stackNum.StackArray()
 
+// space for visual affects
 console.log(' ')
+// outputs array
 console.log(stackNum.StackArray())
 
+// outputs number that was popped
 console.log(`Number removed is ${stackNum.Pop()}`)
-console.log('After Pop, your new array is: ')
 
+// visual affects
+console.log('After Pop, your new array is: ')
 console.log('\nCalculating ...')
+
+// outputs array with popped number
 console.log(stackNum.StackArray())
 
 // end of program

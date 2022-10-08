@@ -8,21 +8,25 @@
  */
 
 class JacksonStack {
+
+  // private array creation
   private readonly stackClass: number[] = []
 
-  poppedNum = 0
-
+  // returns array
   StackArray(): number[] {
     return this.stackClass
   }
 
+  // gathers pushed number
   Push(pushedNum: number): void {
     this.stackClass.push(pushedNum)
   }
-
+  
+  // pops top number
   Pop(): number | undefined {
     return this.stackClass.pop()
   }
 }
 
+// exports file back to main 
 export = JacksonStack
