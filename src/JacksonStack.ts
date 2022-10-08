@@ -8,7 +8,6 @@
  */
 
 class JacksonStack {
-
   // private array creation
   private readonly stackClass: number[] = []
 
@@ -21,12 +20,12 @@ class JacksonStack {
   Push(pushedNum: number): void {
     this.stackClass.push(pushedNum)
   }
-  
+
   // pops top number
   Pop(): number | undefined {
     return this.stackClass.pop()
   }
 }
 
-// exports file back to main 
+// exports file back to main
 export = JacksonStack
