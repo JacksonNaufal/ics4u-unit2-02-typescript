@@ -8,17 +8,20 @@
  */
 
 class JacksonStack {
-  stackNum: number[] = []
+  private readonly stackClass: number[] = []
+
+  poppedNum = 0
+
+  StackArray(): number[] {
+    return this.stackClass
+  }
 
   Push(pushedNum: number): void {
-    this.stackNum.push(pushedNum)
+    this.stackClass.push(pushedNum)
   }
 
-  StackArray(): void {
-    console.log(this.stackNum)
-  }
-  Pop(pushedNum: number): void {
-    this.stackNum.pop(pushedNum)
+  Pop(): number | undefined {
+    return this.stackClass.pop()
   }
 }
 

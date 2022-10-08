@@ -16,11 +16,22 @@ const prompt = promptSync()
 const stackNum = new JacksonStack()
 
 // getting user input
-const userInput = Number(prompt('Enter a Number: '))
-stackNum.Push(userInput)
+for (let counter = 0; counter < 5; counter++) {
+  const userInput = Number(prompt('Enter a Number: '))
+  stackNum.Push(userInput)
+}
 
 // outputting information
 stackNum.StackArray()
+
+console.log(' ')
+console.log(stackNum.StackArray())
+
+console.log(`Number removed is ${stackNum.Pop()}`)
+console.log('After Pop, your new array is: ')
+
+console.log('\nCalculating ...')
+console.log(stackNum.StackArray())
 
 // end of program
 console.log('\nDone!')
