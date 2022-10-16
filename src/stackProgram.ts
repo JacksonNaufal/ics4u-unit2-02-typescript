@@ -1,6 +1,6 @@
 /**
  * The program is the classic
- * mean, median calculator
+ * JacksonStack program
  *
  * By:      Jackson Naufal
  * Version: 1.0
@@ -16,9 +16,13 @@ const prompt = promptSync()
 const stackNum = new JacksonStack()
 
 // getting user input
-for (let counter = 0; counter < 5; counter++) {
+while (true) {
   const userInput = Number(prompt('Enter a Number: '))
-  stackNum.Push(userInput)
+  if (userInput === -1) {
+    break
+  } else {
+    stackNum.Push(userInput)
+  }
 }
 
 // outputting information
